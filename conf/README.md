@@ -1,7 +1,5 @@
 # What is this for?
 
-This folder should be used to store configuration files used by Kedro or by separate tools.
-
 This file can be used to provide users with instructions for how to reproduce local configuration with their own credentials. You can edit the file however you like, but you may wish to retain the information below and add your own section in the section titled **Instructions**.
 
 ## Local configuration
