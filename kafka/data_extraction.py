@@ -1,11 +1,11 @@
-import requests
 import polars as pl
+import requests
 from confluent_kafka import Producer
 
 
 def fetch_data(url):
     response = requests.get(url)
-    if response.status_code == 200:
+    if response.status_code == 200:  # noqa: PLR2004
         return response.json()
     else:
         print(f"Failed to fetch data from {url}")
