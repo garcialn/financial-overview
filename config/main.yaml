@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - process: process_1
+  - model: lgbm-reg
+paths:
+  raw: ${hydra:runtime.cwd}/data/raw/
+  processed: ${hydra:runtime.cwd}/data/processed/
+  final: ${hydra:runtime.cwd}/data/final/
+  model: ${hydra:runtime.cwd}/models /
+files:
+  raw: properties.parquet
+  processed: properties_processed.parquet
+  final: 
+    y: y.parquet
+    X: X.parquet
+  pipeline: pipe.pkl
