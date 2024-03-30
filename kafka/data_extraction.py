@@ -1,6 +1,7 @@
 import polars as pl
 import requests
 from confluent_kafka import Producer
+import hydra
 
 
 def fetch_data(url):
