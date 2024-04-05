@@ -1,0 +1,16 @@
+[default]
+name = {must_exist=true}
+version = {must_exist=true}
+password = {must_exist=false}
+
+    [default.models]
+    must_exist = true
+
+[development]
+name = "dev"
+
+[production]
+name = "admin"
+
+[testing]
+name = "test"

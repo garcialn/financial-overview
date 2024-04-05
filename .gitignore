@@ -1,0 +1,8 @@
+# Ignore python project cache
+/__pycache__
+
+# Ignore dynaconf secret files
+/config/.secrets.toml
+
+# Ignore ruff cache
+/.ruff_cache

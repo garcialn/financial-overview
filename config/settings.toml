@@ -1,0 +1,12 @@
+[default]
+name = ""
+models = ["xgboost", "lightgbm"]
+
+[development]
+name = "dev"
+
+[production]
+name = "admin"
+
+[testing]
+name = "test"
