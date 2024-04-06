@@ -4,24 +4,20 @@ This file can be used to provide users with instructions for how to reproduce lo
 
 ## Main configuration
 
-Since this project uses Dynaconf for managing configuration files, `config.py` is the file that will hold information on settings files and load it like module.
+Since this project uses **Dynaconf** for managing configuration files, `config.py` is the file that will hold information on settings files to be used through out the project.
 
 ## Local configuration
 
-The `local` folder should be used for configuration that is either user-specific (e.g. IDE configuration) or protected (e.g. secrets).
+The `.secrets.toml` file is used for configuration that is either user-specific (e.g. IDE configuration) or protected (e.g. secrets).
 
 > *Note:* Please do not check in any local configuration to version control.
 
-## Base configuration
+## Project configuration
 
-The `base` folder is for shared configuration, such as non-sensitive and project-related configuration that may be shared across team members.
- 
-WARNING: Please do not put access credentials in the base configuration folder.
+The `setting.toml` file is for general configuration, such as non-sensitive and project-related configuration that may be shared across team members.
 
-#### Model configuration
+> **WARNING**: Please do not put access credentials in the base configuration folder.
 
-The `model` folder is meant for values used in statistical models used in the project. Making it easier for code maintenance and code cleaning.
+## Data configuration
 
-#### Process configuration
-
-The `process` folder is used to store configuration values for processing data used in the application.
+The `data_seting.toml` file is meant for values used for any data related configuration that will be required, from extraction, processing and modeling data.

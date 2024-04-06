@@ -1,13 +1,19 @@
-from dynaconf import Dynaconf, Validator
+from dynaconf import Dynaconf
+
+"""
+    Dynaconf settings: the Dynaconf instance (settings) will be used in other files
+    in order to be able to make references to the correct enviroments, their
+    settings and validation
+"""
 
 settings = Dynaconf(
     envvar_prefix="DYNACONF",
     enviroment=True,
     settings_files=[
-        "./config/base/settings.toml",
-        "./config/local/.secrets.toml",
-        "./config/base/model/",
-        "./config/base/process/",
+        "./config/settings.toml",
+        "./config/.secrets.toml",
+        "./config/validators.toml",
+        "./config/data_setings.toml",
     ],
 )
 
