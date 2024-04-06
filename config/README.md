@@ -21,3 +21,9 @@ The `setting.toml` file is for general configuration, such as non-sensitive and 
 ## Data configuration
 
 The `data_seting.toml` file is meant for values used for any data related configuration that will be required, from extraction, processing and modeling data.
+
+---
+
+## Validators
+
+`validators.toml` is used to keep information about rules and parameters about settings fiels that are referenced in other configuration files (weather if the field is mandatory, what are the default values and more)
